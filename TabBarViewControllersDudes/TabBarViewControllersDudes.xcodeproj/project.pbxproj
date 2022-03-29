@@ -56,10 +56,11 @@
 		84E4FAA327F3415C007365CC /* TabBarViewControllersDudes */ = {
 			isa = PBXGroup;
 			children = (
+				84E4FAC027F342CF007365CC /* Controllers */,
+				84E4FABE27F342BC007365CC /* Model */,
 				84E4FABC27F3423D007365CC /* Delegates */,
 				84E4FABA27F34216007365CC /* View */,
 				84E4FAB827F341EE007365CC /* Assets */,
-				84E4FAA827F3415C007365CC /* ViewController.swift */,
 				84E4FAB227F3415E007365CC /* Info.plist */,
 			);
 			path = TabBarViewControllersDudes;
@@ -89,6 +90,21 @@
 				84E4FAA627F3415C007365CC /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		84E4FABE27F342BC007365CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84E4FAC027F342CF007365CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84E4FAA827F3415C007365CC /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
