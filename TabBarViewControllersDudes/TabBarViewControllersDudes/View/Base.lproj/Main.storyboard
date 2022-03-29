@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="vkb-mv-EuG">
             <objects>
-                <tableViewController id="aIP-uQ-GW6" sceneMemberID="viewController">
+                <tableViewController id="aIP-uQ-GW6" customClass="TableOneVCTableViewController" customModule="TabBarViewControllersDudes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="XTM-nB-adc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-245" y="-36"/>
         </scene>
-        <!--View Controller-->
+        <!--Two ButtonVC-->
         <scene sceneID="75w-Ih-duH">
             <objects>
-                <viewController id="eGb-vF-Z38" sceneMemberID="viewController">
+                <viewController id="eGb-vF-Z38" customClass="TwoButtonVC" customModule="TabBarViewControllersDudes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V6G-Ej-AJt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="612" y="-36"/>
         </scene>
-        <!--View Controller-->
+        <!--Leave FeedbackVC-->
         <scene sceneID="LWv-Um-EAa">
             <objects>
-                <viewController id="KDS-Sl-gwn" sceneMemberID="viewController">
+                <viewController id="KDS-Sl-gwn" customClass="LeaveFeedbackVC" customModule="TabBarViewControllersDudes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5m-0Q-4ZO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1554" y="352"/>
         </scene>
-        <!--Table View Controller-->
+        <!--All ReviewsVC-->
         <scene sceneID="ghh-x4-4Kb">
             <objects>
-                <tableViewController id="EPh-HK-tZa" sceneMemberID="viewController">
+                <tableViewController id="EPh-HK-tZa" customClass="AllReviewsVC" customModule="TabBarViewControllersDudes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NwI-la-W6M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
