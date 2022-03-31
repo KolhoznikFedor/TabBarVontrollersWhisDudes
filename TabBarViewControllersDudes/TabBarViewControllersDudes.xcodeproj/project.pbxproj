@@ -14,10 +14,11 @@
 		84E4FAB127F3415E007365CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E4FAAF27F3415E007365CC /* LaunchScreen.storyboard */; };
 		84E4FAC227F34613007365CC /* Dude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAC127F34612007365CC /* Dude.swift */; };
 		84E4FAC527F34701007365CC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAC427F34701007365CC /* DataManager.swift */; };
-		84E4FAC727F349CE007365CC /* TableOneVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAC627F349CE007365CC /* TableOneVCTableViewController.swift */; };
 		84E4FACB27F34A93007365CC /* TwoButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACA27F34A93007365CC /* TwoButtonVC.swift */; };
 		84E4FACD27F34B0D007365CC /* AllReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACC27F34B0D007365CC /* AllReviewsVC.swift */; };
 		84E4FACF27F34B74007365CC /* LeaveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */; };
+		84E4FAD127F5B1E3007365CC /* DataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAD027F5B1E3007365CC /* DataSorce.swift */; };
+		84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,11 @@
 		84E4FAB227F3415E007365CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E4FAC127F34612007365CC /* Dude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dude.swift; sourceTree = "<group>"; };
 		84E4FAC427F34701007365CC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		84E4FAC627F349CE007365CC /* TableOneVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOneVCTableViewController.swift; sourceTree = "<group>"; };
 		84E4FACA27F34A93007365CC /* TwoButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonVC.swift; sourceTree = "<group>"; };
 		84E4FACC27F34B0D007365CC /* AllReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllReviewsVC.swift; sourceTree = "<group>"; };
 		84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveFeedbackVC.swift; sourceTree = "<group>"; };
+		84E4FAD027F5B1E3007365CC /* DataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSorce.swift; sourceTree = "<group>"; };
+		84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +116,10 @@
 		84E4FAC027F342CF007365CC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84E4FAC627F349CE007365CC /* TableOneVCTableViewController.swift */,
 				84E4FACA27F34A93007365CC /* TwoButtonVC.swift */,
 				84E4FACC27F34B0D007365CC /* AllReviewsVC.swift */,
 				84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */,
+				84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				84E4FAC427F34701007365CC /* DataManager.swift */,
+				84E4FAD027F5B1E3007365CC /* DataSorce.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -201,13 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */,
 				84E4FAA527F3415C007365CC /* AppDelegate.swift in Sources */,
 				84E4FAC527F34701007365CC /* DataManager.swift in Sources */,
 				84E4FAA727F3415C007365CC /* SceneDelegate.swift in Sources */,
 				84E4FACF27F34B74007365CC /* LeaveFeedbackVC.swift in Sources */,
+				84E4FAD127F5B1E3007365CC /* DataSorce.swift in Sources */,
 				84E4FAC227F34613007365CC /* Dude.swift in Sources */,
 				84E4FACD27F34B0D007365CC /* AllReviewsVC.swift in Sources */,
-				84E4FAC727F349CE007365CC /* TableOneVCTableViewController.swift in Sources */,
 				84E4FACB27F34A93007365CC /* TwoButtonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
