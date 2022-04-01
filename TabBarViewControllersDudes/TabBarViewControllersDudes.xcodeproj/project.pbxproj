@@ -19,6 +19,11 @@
 		84E4FACF27F34B74007365CC /* LeaveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */; };
 		84E4FAD127F5B1E3007365CC /* DataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAD027F5B1E3007365CC /* DataSorce.swift */; };
 		84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */; };
+		84E4FAFE27F6484A007365CC /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 84E4FAFD27F6484A007365CC /* NVActivityIndicatorView */; };
+		84E4FB0027F6484A007365CC /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 84E4FAFF27F6484A007365CC /* NVActivityIndicatorViewExtended */; };
+		84E7672A27F6FD9F00934841 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7672827F6FD9F00934841 /* TableViewCell.swift */; };
+		84E7672B27F6FD9F00934841 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E7672927F6FD9F00934841 /* TableViewCell.xib */; };
+		84E7672D27F7161400934841 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7672C27F7161400934841 /* CellManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,9 @@
 		84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveFeedbackVC.swift; sourceTree = "<group>"; };
 		84E4FAD027F5B1E3007365CC /* DataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSorce.swift; sourceTree = "<group>"; };
 		84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableVC.swift; sourceTree = "<group>"; };
+		84E7672827F6FD9F00934841 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84E7672927F6FD9F00934841 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		84E7672C27F7161400934841 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E4FAFE27F6484A007365CC /* NVActivityIndicatorView in Frameworks */,
+				84E4FB0027F6484A007365CC /* NVActivityIndicatorViewExtended in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				84E4FAC127F34612007365CC /* Dude.swift */,
+				84E7672827F6FD9F00934841 /* TableViewCell.swift */,
+				84E7672927F6FD9F00934841 /* TableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 			children = (
 				84E4FAC427F34701007365CC /* DataManager.swift */,
 				84E4FAD027F5B1E3007365CC /* DataSorce.swift */,
+				84E7672C27F7161400934841 /* CellManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -149,6 +162,10 @@
 			dependencies = (
 			);
 			name = TabBarViewControllersDudes;
+			packageProductDependencies = (
+				84E4FAFD27F6484A007365CC /* NVActivityIndicatorView */,
+				84E4FAFF27F6484A007365CC /* NVActivityIndicatorViewExtended */,
+			);
 			productName = TabBarViewControllersDudes;
 			productReference = 84E4FAA127F3415C007365CC /* TabBarViewControllersDudes.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 84E4FA9827F3415C007365CC;
+			packageReferences = (
+				84E4FAFC27F6484A007365CC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = 84E4FAA227F3415C007365CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E4FAB127F3415E007365CC /* LaunchScreen.storyboard in Resources */,
+				84E7672B27F6FD9F00934841 /* TableViewCell.xib in Resources */,
 				84E4FAAE27F3415E007365CC /* Assets.xcassets in Resources */,
 				84E4FAAC27F3415C007365CC /* Main.storyboard in Resources */,
 			);
@@ -205,10 +226,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */,
+				84E7672D27F7161400934841 /* CellManager.swift in Sources */,
 				84E4FAA527F3415C007365CC /* AppDelegate.swift in Sources */,
 				84E4FAC527F34701007365CC /* DataManager.swift in Sources */,
 				84E4FAA727F3415C007365CC /* SceneDelegate.swift in Sources */,
 				84E4FACF27F34B74007365CC /* LeaveFeedbackVC.swift in Sources */,
+				84E7672A27F6FD9F00934841 /* TableViewCell.swift in Sources */,
 				84E4FAD127F5B1E3007365CC /* DataSorce.swift in Sources */,
 				84E4FAC227F34613007365CC /* Dude.swift in Sources */,
 				84E4FACD27F34B0D007365CC /* AllReviewsVC.swift in Sources */,
@@ -432,6 +455,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84E4FAFC27F6484A007365CC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84E4FAFD27F6484A007365CC /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E4FAFC27F6484A007365CC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		84E4FAFF27F6484A007365CC /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E4FAFC27F6484A007365CC /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84E4FA9927F3415C007365CC /* Project object */;
 }
