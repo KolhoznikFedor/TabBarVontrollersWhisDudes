@@ -8,22 +8,38 @@
 import UIKit
 
 class LeaveFeedbackVC: UIViewController {
-
+    @IBOutlet weak var feedBackTextView: UITextView!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var segmentView: UISegmentedControl!
+    @IBOutlet weak var buttonView: UIButton!
+    
+    var index: Int!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedBackTextView.delegate = self
+        
 
-        // Do any additional setup after loading the view.
+       
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func goBackFeed() {
+        let feedBack = Feedback(text: feedBackTextView.text,
+                                mark: Double(segmentView.selectedSegmentIndex + 1))
+        DataManager.shared.dudes[1].feedbacks.append(feedBack)
     }
-    */
+    
+}
 
+extension LeaveFeedbackVC: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if textView == feedBackTextView {
+            let isCount = textView.text.count > 10
+            buttonView.isEnabled = isCount
+            errorLabel.isHidden = isCount
+        }
+        return true
+    }
 }
