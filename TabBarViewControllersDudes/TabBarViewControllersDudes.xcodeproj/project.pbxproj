@@ -21,7 +21,6 @@
 		84E4FACD27F34B0D007365CC /* AllReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACC27F34B0D007365CC /* AllReviewsVC.swift */; };
 		84E4FACF27F34B74007365CC /* LeaveFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */; };
 		84E4FAD127F5B1E3007365CC /* DataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAD027F5B1E3007365CC /* DataSorce.swift */; };
-		84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */; };
 		84E4FAFE27F6484A007365CC /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 84E4FAFD27F6484A007365CC /* NVActivityIndicatorView */; };
 		84E4FB0027F6484A007365CC /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 84E4FAFF27F6484A007365CC /* NVActivityIndicatorViewExtended */; };
 		84E7672D27F7161400934841 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7672C27F7161400934841 /* CellManager.swift */; };
@@ -45,7 +44,6 @@
 		84E4FACC27F34B0D007365CC /* AllReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllReviewsVC.swift; sourceTree = "<group>"; };
 		84E4FACE27F34B74007365CC /* LeaveFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveFeedbackVC.swift; sourceTree = "<group>"; };
 		84E4FAD027F5B1E3007365CC /* DataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSorce.swift; sourceTree = "<group>"; };
-		84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableVC.swift; sourceTree = "<group>"; };
 		84E7672C27F7161400934841 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		84F2ED7E27F8F55D00D99F88 /* OneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +122,6 @@
 		84E4FABC27F3423D007365CC /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				84E4FAFA27F5BF5E007365CC /* OneTableVC.swift */,
 				84E4FAA427F3415C007365CC /* AppDelegate.swift */,
 				84E4FAA627F3415C007365CC /* SceneDelegate.swift */,
 			);
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8422AEBE27F907E70060877A /* TableViewCell.swift in Sources */,
-				84E4FAFB27F5BF5E007365CC /* OneTableVC.swift in Sources */,
 				84E7672D27F7161400934841 /* CellManager.swift in Sources */,
 				84E4FAA527F3415C007365CC /* AppDelegate.swift in Sources */,
 				84E4FAC527F34701007365CC /* DataManager.swift in Sources */,

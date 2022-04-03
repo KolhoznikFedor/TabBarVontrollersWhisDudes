@@ -16,7 +16,11 @@ class AllReviewsVC: UITableViewController {
     }
 
     override func viewDidLoad() {
-        tableView.register(UINib(nibName: "TestTableViewCell", bundle: nil), forCellReuseIdentifier: "TestTableViewCell")
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
 
     // MARK: - Table view data source
@@ -26,18 +30,10 @@ class AllReviewsVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let feedback = dude.feedbacks[indexPath.row]
-        
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ReviewTableViewCell
-//        cell.dateLabel.text = feedback.dateString
-//        cell.rewievLabel.text = feedback.text
-//        cell.markLabel.text = feedback.ratingBar
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TestTableViewCell", for: indexPath) as! TableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.nameLb1.text = feedback.dataString
-        cell.textLb1.text = feedback.dataString
+        cell.textLb1.text = feedback.text
         cell.ratingLb1.text = feedback.ratingBar
         return cell
     }
