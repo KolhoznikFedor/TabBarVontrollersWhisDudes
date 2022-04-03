@@ -19,15 +19,12 @@ class OneVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.dataSource = self
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "ShowMealDetail" else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-
         let mealDetailVC = segue.destination as! TwoButtonVC
         mealDetailVC.index = indexPath.row
     }
@@ -37,19 +34,14 @@ class OneVC: UIViewController {
     }
 }
 
-// MARK: UITableViewDataSource
-
 extension OneVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dudes.count
     }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DudeCell", for: indexPath)
-
         let meal = dudes[indexPath.row]
         cellManager.configure(cell, wiht: meal)
-
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

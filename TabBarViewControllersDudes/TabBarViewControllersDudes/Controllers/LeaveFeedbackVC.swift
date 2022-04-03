@@ -15,28 +15,19 @@ class LeaveFeedbackVC: UIViewController {
     
     var index: Int!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         feedBackTextView.delegate = self
     }
     
-
     @IBAction func goBackFeed() {
-        
         let feedback1 = Feedback(text: feedBackTextView.text, mark: Double(segmentView.selectedSegmentIndex + 1))
-
-//        let feedback = Feedback(text: feedBackTextView.text,
-//                              mark: Double(segmentView.selectedSegmentIndex + 1))
         DataManager.shared.dudes[index].feedbacks.append(feedback1)
-//        navigationController?.popToRootViewController(animated: true)
     }
-    
 }
 
 extension LeaveFeedbackVC: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-    
         if textView == feedBackTextView {
             let isCountEnough = textView.text.count > 2
             buttonView.isEnabled = isCountEnough
