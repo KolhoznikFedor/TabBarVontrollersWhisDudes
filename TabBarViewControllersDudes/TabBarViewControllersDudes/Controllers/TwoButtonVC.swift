@@ -6,12 +6,12 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
-import NVActivityIndicatorViewExtended
+//import NVActivityIndicatorView
+//import NVActivityIndicatorViewExtended
 
-class TwoButtonVC: UIViewController, NVActivityIndicatorViewable {
+class TwoButtonVC: UIViewController {
     
-    var dudeName: String?
+//    var dudeName: String?
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var dudeNameLavel: UILabel!
@@ -20,46 +20,46 @@ class TwoButtonVC: UIViewController, NVActivityIndicatorViewable {
 
     @IBOutlet weak var buttonAllRiew: UIButton!
 
-    var index: Int!
     
-    var dude: Dude {
-        DataManager.shared.dudes[1]
+    
+    var index: Int!
+
+    var meal: Dude {
+        DataManager.shared.dudes[index]
     }
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        updateUI(with: view.bounds.size)
-        
-        navigationItem.title = dudeName
-//        imageView.image = UIImage(named: dudeName  ?? "")
-        title = dude.name
-        imageView.image = dude.image
-        dudeNameLavel.text = dude.name
-        dudePriceLabel.text = String(dude.price) + "$"
-        dideRatingLabel.text = dude.ratingBar
-        buttonPla()
-        
-        
+        updateUI(with: view.bounds.size)
     }
-    func buttonPla() {
-    let showRiew = "Посмотреть (\(dude.feedbacks.count) отзыв"
-        buttonAllRiew.setTitle(showRiew, for: .normal)
-        buttonAllRiew.isEnabled = dude.feedbacks.count != 0
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        updateUI(with: size)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? LeaveFeedbackVC {
-            dest.index(ofAccessibilityElement: (Any).self)
+            dest.index = index
         }
         if let dest = segue.destination as? AllReviewsVC {
-            dest.index(ofAccessibilityElement: (Any).self)
+            dest.index = index
         }
     }
     
+    func updateUI(with size: CGSize) {
+        let isVertical = size.width < size.height
+//        mealStackView.axis = isVertical ? .vertical : .horizontal
 
-//startAnimating(type: .ballClipRotateMultiple)
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) { [weak self] in
-//            self?.stopAnimating()
+        title = meal.name
+        imageView.image = meal.image
+        dudeNameLavel.text = meal.name
+        dudePriceLabel.text = String(meal.price) + " BYN"
+
+        dideRatingLabel.text = meal.ratingBar
+
+        let showReviewsBtnTitle = "Просмотреть (\(meal.feedbacks.count)) отзывов"
+        buttonAllRiew.setTitle(showReviewsBtnTitle, for: .normal)
+        buttonAllRiew.isEnabled = meal.feedbacks.count != 0
+    }
 }

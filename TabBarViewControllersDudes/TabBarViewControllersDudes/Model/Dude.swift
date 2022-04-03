@@ -21,6 +21,7 @@ struct Dude {
             return "The are no reviews"
         }
     }
+    
     private var rating: Double? {
         if feedbacks.isEmpty {
             return nil
@@ -33,6 +34,7 @@ struct Dude {
         }
     }
 }
+
 struct Feedback {
     private let date = Date()
     let text: String
