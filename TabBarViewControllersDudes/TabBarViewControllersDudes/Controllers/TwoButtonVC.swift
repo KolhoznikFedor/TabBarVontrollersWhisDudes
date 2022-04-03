@@ -46,9 +46,9 @@ class TwoButtonVC: UIViewController {
         title = meal.name
         imageView.image = meal.image
         dudeNameLavel.text = meal.name
-        dudePriceLabel.text = String(meal.price) + " BYN"
+        dudePriceLabel.text = String(meal.price) + " USD"
         dideRatingLabel.text = meal.ratingBar
-        let showReviewsBtnTitle = "Просмотреть (\(meal.feedbacks.count)) отзывов"
+        let showReviewsBtnTitle = "Просмотреть (\(meal.feedbacks.count)) отзывы"
         buttonAllRiew.setTitle(showReviewsBtnTitle, for: .normal)
         buttonAllRiew.isEnabled = meal.feedbacks.count != 0
     }
